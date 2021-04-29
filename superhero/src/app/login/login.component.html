@@ -1,0 +1,28 @@
+<div class="main">
+  <section class="signup">
+    <div class="container">
+      <div class="signup-content">
+        <form name='loginForm' id="signup-form" class="signup-form">
+          <script type="text/javascript">
+            localStorage.removeItem('username');
+          </script>
+          <h2 class="form-title">Login</h2>
+          <div class="form-group">
+            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+          </div>
+          <div class="form-group btn-submit">
+            <input type="submit" name="button" id="login" class="form-submit" value="Login" (click)="login()"/>
+          </div>
+        </form>
+        <p class="loginhere">
+          Bạn đã có tài khoản ? <a href="" class="loginhere-link">Đăng kí tại đây</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<!--<script src='<c:url value="/resources/common/scripts.js" />'></script>-->
